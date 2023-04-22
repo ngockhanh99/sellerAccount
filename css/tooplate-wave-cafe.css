@@ -140,7 +140,7 @@ h2 { margin-top: 0; }
 }
 
 .tm-drinks-nav { height: 80px; }
-.tm-main { max-width: 660px; }
+.tm-main {max-width: 90%;}
 
 .tm-drinks-nav > ul {
     display: flex;
@@ -160,14 +160,15 @@ h2 { margin-top: 0; }
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    position: relative;
 }
 
 .tm-list-item-2 { align-items: flex-start; }
 
 .tm-list-item-img {
     margin-right: 20px;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     background-color: #099;
 }
 
@@ -178,14 +179,29 @@ h2 { margin-top: 0; }
 }
 
 .tm-list-item-text {
-    padding: 20px 25px;
+    padding: 15px 20px;
     flex: 1;
-    height: 120px;
-    /* float: left; */
+    height: 150px;
+}
+.description{
     display: flex;
     justify-content: space-between;
 }
-
+.description p{
+    margin: 0;
+    font-size: 16px;
+}
+.title-account h3{
+    margin: 0;
+}
+.account-price{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.title-account{
+    display: flex; justify-content: space-between;
+}
 .tm-list-item-text-2 { flex: 1; }
 
 .tm-list-item-name {
@@ -295,6 +311,39 @@ h2 { margin-top: 0; }
 }
 
 .tm-mb-30 { margin-bottom: 30px; }
+@media(max-width: 1600px){ 
+    .tm-left{
+        width: 40%;
+    }
+    .tm-right{
+        width: 60%;
+    }
+    .tm-main {
+        max-width: 95%;
+        margin-left: 5%;
+    }
+
+    
+}
+@media(max-width: 1366px){ 
+    .tm-left-inner{
+        max-width: 460px;
+    }
+    .tm-left{
+        width: 35%;
+    }
+    .tm-right{
+        width: 65%;
+    }
+    .description p{
+        font-size: 15px;
+    }
+    .tm-page-link {
+        min-width: 210px;
+        height: 80px;
+    }
+
+}
 
 @media (max-width: 1130px) and (min-width: 992px) {
     .tm-left-inner { max-width: 380px; }
@@ -304,6 +353,7 @@ h2 { margin-top: 0; }
     .tm-page-link-icon { margin-right: 15px; }
     .tm-left { width: 45%; }
     .tm-right { width: 55%; }
+
 }
 
 @media (max-width: 991px) {
@@ -311,6 +361,10 @@ h2 { margin-top: 0; }
     .tm-left, .tm-right { width: 100%; }
     .tm-left { margin-bottom: 50px; }
     .tm-row { display: block; }
+    .tm-main {
+        max-width: 100%;
+        margin:auto;
+    }
 }
 
 @media (max-width: 574px) {
